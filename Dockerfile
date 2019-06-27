@@ -8,4 +8,4 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_$NODE_VERSION.x | 
     yum -y install vips vips-devel make gcc-c++.x86_64 && \
     yum clean all && \
     npm install -g yarn --no-progress && \ 
-    export tar='bsdtar'
+    echo "alias tar=bsdtar" >> /root/.bashrc
