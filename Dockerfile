@@ -9,3 +9,5 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_$NODE_VERSION.x | 
     yum clean all && \
     npm install -g yarn --no-progress && \ 
     echo "alias tar=bsdtar" >> /root/.bashrc
+
+RUN alias tar=bsdtar && export tar=bsdtar
