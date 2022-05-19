@@ -1,4 +1,4 @@
-FROM registry.centos.org/centos:latest
+FROM centos:7
 
 ENV NODE_VERSION 14
 
@@ -7,4 +7,4 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_$NODE_VERSION.x | 
     yum-config-manager --enable remi && \
     yum -y install vips vips-devel make gcc-c++.x86_64 && \
     yum clean all && \
-    npm install -g yarn --no-progress
+    npm install -g pnpm --no-progress
